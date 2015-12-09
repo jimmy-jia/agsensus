@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<title>AgSensus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400|Open+Sans+Condensed:300|Lato|Montserrat|Source+Sans+Pro:400,700italic|Varela|Poiret One|Lobster' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<span id="slideoutbutton" onclick="slideoutmenu()">
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+						<g>
+							<path id="svg_3" fill="white" d="m4.04949,8.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5c0,-0.276 -0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5c0,0.275 0.224,0.5 0.5,0.5z"/>
+							<path id="svg_4" fill="white" d="m4.04949,5.47441l8,0c0.275,0 0.5,-0.224 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+							<path id="svg_5" fill="white" d="m4.04949,11.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.225 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+						</g>
+					</svg>
+			</span>
+			<script>
+				function slideoutmenu(){
+					$('#site-navigation').toggleClass('slideoutanim');
+					
+					for(var i=3; i<6; i++){
+						if(!$('#svg_'+i).attr('class'))
+							$('#svg_'+i).attr('class', 'svg'+i);
+						else
+							$('#svg_'+i).removeAttr('class');
+					}
+				}
+			</script>
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a class="activenav"  href="products.html">Products</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+			<p class="aboutheading">Products</p>
+
+			
+			<div class="backgroundcompany">
+				<p class="headingtext" id="app">Mission Control App</p>
+				<img src="resources/drone2.jpg"/>
+				<p>Tablet or smart phone app that allows you to plan and execute autonomous data 
+				collection with our field scout, or with your personal DJI UAS. This system allows 
+				you to find and delineate your field using overhead satellite imaging. With easy to 
+				use touch screen controls, you can set way points, or allow the system to 
+				automatically generate flight paths based on the size and shape of your field. 
+				Available soon!</p>
+			
+
+				<p class="headingtext" id="scout">High Resolution Field Scout</p>
+				<img src="resources/drone2.jpg"/>
+				<p>Innovative field scout system that utilizes high and low altitude data collection 
+				modes, with one of a kind on-site data pre-processing that provides you with near 
+				real-time field situation report. This system will allow you keep up with the dynamic 
+				changes in your crops, and make time-critical decisions faster than ever before. 
+				Available soon!</p>
+
+
+				<p class="headingtext" id="drone">High Efficiency Variable Rate Sprayer</p>
+				<img src="resources/drone2.jpg"/>
+				<p>Simple to use, autonomous variable rate chemical application drone. With the ability 
+				to differentiate between crops and weeds, this system offers chemical application 
+				with pinpoint accuracy, providing the potential for unprecedented efficiency in 
+				farming. Available soon!</p>
+			</div>
+
+		<footer>
+			<div class="site-info">
+				Ag-Sensus LLC &copy; 2015 - <a href="liujunli@illinois.edu">liujunli@illinois.edu</a> - (217)-979-9972
+			</div>
+		</footer>
+	</div>

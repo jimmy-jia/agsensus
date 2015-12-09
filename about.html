@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<title>AgSensus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400|Open+Sans+Condensed:300|Lato|Montserrat|Source+Sans+Pro:400,700italic|Varela|Poiret One|Lobster' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<span id="slideoutbutton" onclick="slideoutmenu()">
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+						<g>
+							<path id="svg_3" fill="white" d="m4.04949,8.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5c0,-0.276 -0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5c0,0.275 0.224,0.5 0.5,0.5z"/>
+							<path id="svg_4" fill="white" d="m4.04949,5.47441l8,0c0.275,0 0.5,-0.224 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+							<path id="svg_5" fill="white" d="m4.04949,11.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.225 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+						</g>
+					</svg>
+			</span>
+			<script>
+				function slideoutmenu(){
+					$('#site-navigation').toggleClass('slideoutanim');
+					
+					for(var i=3; i<6; i++){
+						if(!$('#svg_'+i).attr('class'))
+							$('#svg_'+i).attr('class', 'svg'+i);
+						else
+							$('#svg_'+i).removeAttr('class');
+					}
+				}
+			</script>
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation">
+					<a href="index.html">Home</a>
+					<a class="activenav" href="about.html">About</a>
+					<a href="products.html">Products</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<!--<img class="aboutbanner" src="resources/farm.jpg"/>-->
+
+		<p class="aboutheading">About Us</p>
+
+		<div class="backgroundcompany">Situated at the heart of the American Cornbelt, Ag-Sensus was founded by pioneers in the precision agriculture field. With the goal of making precision agriculture technology accessible to hard-working American farmers, Ag-Sensus will provide equipment and services geared towards improving yield efficiency by providing users with practical tools with which to make smarter decisions.
+		<br>
+		<img src="resources/uiuc.jpg" width="100%"/>
+		<br>
+
+		With exclusive license to research conducted by the Illinois Laboratory for Agriculture Remote Sensing over the past decade, and established through the University of Illinois Research Park's I-Start program, Ag-Sensus is well positioned to leverage the recent technological advances in UAS technology, and agriculture remote sensing expertise at the University of Illinois into practical precision agriculture solutions.
+		<br><br>
+		Vision:Lorem Ipsum history and whatnot of the company 
+		</div>
+		
+
+		
+		<div class="push"></div>
+	</div>
+	<footer>
+		<div class="site-info">
+			Ag-Sensus LLC &copy; 2015 - <a href="liujunli@illinois.edu">liujunli@illinois.edu</a> - (217)-979-9972
+		</div>
+	</footer>
+</body>
+</html>

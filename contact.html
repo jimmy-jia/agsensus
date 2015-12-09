@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>AgSensus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400|Open+Sans+Condensed:300|Lato|Montserrat|Source+Sans+Pro:400,700italic|Varela|Poiret One|Lobster' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<span id="slideoutbutton" onclick="slideoutmenu()">
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+						<g>
+							<path id="svg_3" fill="white" d="m4.04949,8.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5c0,-0.276 -0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5c0,0.275 0.224,0.5 0.5,0.5z"/>
+							<path id="svg_4" fill="white" d="m4.04949,5.47441l8,0c0.275,0 0.5,-0.224 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+							<path id="svg_5" fill="white" d="m4.04949,11.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.225 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+						</g>
+					</svg>
+			</span>
+			<script>
+				function slideoutmenu(){
+					$('#site-navigation').toggleClass('slideoutanim');
+					
+					for(var i=3; i<6; i++){
+						if(!$('#svg_'+i).attr('class'))
+							$('#svg_'+i).attr('class', 'svg'+i);
+						else
+							$('#svg_'+i).removeAttr('class');
+					}
+				}
+			</script>
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="products.html">Products</a>
+					<a class="activenav" href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<p class="aboutheading">Contact:</p>
+		<div class="backgroundcompany">Feel free to contact us by email at <a href="liujunli@illinois.edu">liujunli@illinois.edu</a> 
+		<br>Or by phone at <a href="tel:217-979-9972">217-979-9972</a><br>
+		We are located at the University of Illinois, EnterpriseWorks Incubator.
+		60 Hazelwood Dr. Champaign, IL 61820</div>
+		<iframe class="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=EnterpriseWorks%2C%20Hazelwood%20Drive%2C%20Champaign%2C%20IL%2C%20United%20States&#038;key=AIzaSyB8_4JjzqDLcrK8gIp1sr2GfwikngGffeo"></iframe>
+
+		<h1 class="headingtext">Have a Question? Contact Us!</h1>
+		<form action="//formspree.io/liujunli@illinois.edu" method="POST" id="formspree">
+			<input type="text" name="name" placeholder="Name">
+			<input type="email" name="_replyto" placeholder="Email">
+			<textarea name="message" rows="4" placeholder="Your Message"></textarea>
+			<input type="submit" value="Send">
+			<input type="hidden" name="_subject" value="Agsensus Website Form" />
+			<input type="text" name="_gotcha" style="display:none" />
+			<input type="hidden" name="_next" value="#" />
+		</form>
+	<div class="push"></div>
+	</div>
+	<footer>
+		<div class="site-info">
+			Ag-Sensus LLC &copy; 2015 - <a href="liujunli@illinois.edu">liujunli@illinois.edu</a> - (217)-979-9972
+		</div>
+	</footer>
+</body>
+</html>
