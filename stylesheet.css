@@ -129,7 +129,7 @@ nav a:hover{
 	background-attachment: fixed;
 	color: white;
 	text-align: center;
-	text-shadow: 3px 2px 8px #2c3e50;
+	text-shadow: 1px 1px 2px #000;
 }
 #cheading img{
 	margin-top: 8vh;
@@ -137,7 +137,7 @@ nav a:hover{
 	max-width: 100%;
 }
 #cheading h3{
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: "Roboto", sans-serif;
 	font-weight: 100;
 	text-transform: lowercase;
@@ -204,7 +204,7 @@ nav a:hover{
 	margin: 0 auto;
 }
 .getit:nth-child(3){
-	margin-right: 30px;
+	/*margin-right: 30px;*/
 }
 .getit{
 	padding: 15px 12px;
