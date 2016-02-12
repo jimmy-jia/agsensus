@@ -428,7 +428,7 @@ input:focus, input:active, textarea:focus, textarea:active{
 	width: 800px;
 	max-width: 100%;
 	margin: 0 auto;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
 	font-size: 2em;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -471,4 +471,9 @@ footer a{
 }
 footer a:hover{
 	color: #0f0;
+}
+.smallfooter{
+	width: 800px;
+	margin: 0 auto;
+	max-width: 100%;
 }
